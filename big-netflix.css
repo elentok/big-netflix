@@ -54,11 +54,26 @@ body {
   padding: 10px 13px;
 }
 
+.global-header .ui-autocomplete {
+  width: 452px !important;
+}
+
+.global-header .ui-autocomplete li a {
+  width: 338px;
+  font-size: 20px;
+}
+
+.global-header .ui-autocomplete li.beginRow span {
+  right: 349px;
+  font-size: 18px;
+}
+
 /* Rental history page */
 
 #rental-history tr td.first-of-type {
   font-size: 25px;
   font-weight: bold;
+  width: 70%;
 }
 
 #fground {
