@@ -1,4 +1,5 @@
 body {
+  background-color: black;
   padding: 0;
   min-width: 0px;
 }
@@ -60,6 +61,16 @@ body {
   width: 500px;
 }
 
+#BobMovie .bobMovieHeader a {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#BobMovie .bobMovieContent {
+  font-size: 25px;
+  font-weight: bold;
+}
+
 #BobMovie .interactive .bobMovieHeader a {
   font-size: 30px;
   font-weight: bold;
@@ -70,14 +81,27 @@ body {
   font-weight: bold;
 }
 
+.subnav-wrap {
+  background: #222 !important;
+  color: #e1e1e1 !important;
+  text-shadow: none !important;
+}
+
 .subnav-wrap .subnav-tabs a {
-  font-size: 22px;
-  padding: 12px 18px;
+  font-size: 22px !important;
+  padding: 12px 18px !important;
+}
+
+#global-header .subnav-wrap a {
+  font-size: 22px !important;
+  padding: 12px 18px !important;
+  text-shadow: none !important;
+  color: #e1e1e1 !important;
 }
 
 #global-header-wrap .subnav-wrap a {
-  font-size: 20px;
-  padding: 10px 13px;
+  font-size: 20px !important;
+  padding: 10px 13px !important;
 }
 
 #global-header .ui-autocomplete {
@@ -122,6 +146,10 @@ body {
   display: none;
 }
 
+#bd .queue-vignette {
+  display: none;
+}
+
 #fground #bd.main-content {
   background-color: black;
   color: #e1e1e1;
@@ -138,3 +166,59 @@ body {
 #bd .agMovie-lulg .boxShot, .agMovie-lubxsm .boxShot {
   border: none;
 }
+
+#qbox {
+  background-color: black;
+  border: none !important;
+}
+
+#qbox h2 {
+  background-color: black;
+  border-bottom: none;
+  color: #e1e1e1;
+  font-size: 30px;
+  padding: 0;
+}
+
+.qtbl tr th {
+  border-bottom: none;
+}
+
+.qtbl thead {
+  display: none !important;
+  /*background-color: black !important;*/
+  /*font-size: 20px !important;*/
+  /*color: #e1e1e1 !important;*/
+}
+
+.qtbl td {
+  background-color: black !important;
+}
+
+.qtbl .st {
+  width: auto !important;
+}
+
+.qtbl .gn, .qtbl .av, .qtbl .rp {
+  display: none !important;
+}
+
+/*title*/
+.qtbl td.tt {
+  font-size: 24px !important;
+}
+
+#athome .qtbl tr.edr .st, .instant #athome .qtbl thead th.st { width: auto !important }
+
+.qtbl tr td {
+  border: none !important;
+}
+
+.qtbl a {
+  text-decoration: none !important;
+}
+
+#qtabs {
+  display: none !important;
+}
+
