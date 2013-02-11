@@ -1,5 +1,6 @@
 body {
   padding: 0;
+  min-width: 0px;
 }
 
 #hd {
@@ -7,6 +8,28 @@ body {
   right: 0;
   top: 0;
   margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+
+/* clearfix */
+#hd:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+#hd .last {
+  float: right;
+  margin: 0;
+}
+
+#hd .nav-wrap {
+  width: auto;
 }
 
 #searchField {
@@ -30,6 +53,9 @@ body {
   line-height: 24px;
 }
 
+#nav-kids { display: none; }
+#nav-recs { display: none; }
+
 #BobMovie {
   width: 500px;
 }
@@ -49,23 +75,35 @@ body {
   padding: 12px 18px;
 }
 
-.global-header-wrap .subnav-wrap a {
+#global-header-wrap .subnav-wrap a {
   font-size: 20px;
   padding: 10px 13px;
 }
 
-.global-header .ui-autocomplete {
+#global-header .ui-autocomplete {
   width: 452px !important;
 }
 
-.global-header .ui-autocomplete li a {
+#global-header .ui-autocomplete li a {
   width: 338px;
   font-size: 20px;
 }
 
-.global-header .ui-autocomplete li.beginRow span {
+#global-header .ui-autocomplete li.beginRow span {
   right: 349px;
   font-size: 18px;
+}
+
+/*hide the dvds link*/
+#global-header .nav-item:last-child {
+  display: none;
+}
+
+#global-header li.nav-item {
+  max-width: 100% !important;
+  width: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* Rental history page */
@@ -78,4 +116,25 @@ body {
 
 #fground {
   width: auto;
+}
+
+#logo {
+  display: none;
+}
+
+#fground #bd.main-content {
+  background-color: black;
+  color: #e1e1e1;
+}
+
+#fground #bd.main-content a {
+  color: #e1e1e1 !important;
+}
+
+#fground #bd.main-content h3 {
+  color: #e1e1e1 !important;
+}
+
+#bd .agMovie-lulg .boxShot, .agMovie-lubxsm .boxShot {
+  border: none;
 }
